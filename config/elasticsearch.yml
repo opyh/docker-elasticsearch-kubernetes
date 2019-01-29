@@ -26,7 +26,8 @@ http:
   cors:
     enabled: ${HTTP_CORS_ENABLE}
     allow-origin: ${HTTP_CORS_ALLOW_ORIGIN}
-
+    allow-headers : ${HTTP_CORS_ALLOW_HEADERS}
+    allow-credentials: ${HTTP_CORS_ALLOW_CREDENTIALS}
 discovery:
   zen:
     ping.unicast.hosts: ${DISCOVERY_SERVICE}
